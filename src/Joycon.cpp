@@ -1032,7 +1032,7 @@ string Joycon::checkMouseClick(int mouseClickX, int mouseClickY, int mouseButton
 }
 
 bool Joycon::pointInsidePolylines(vector<ofPolyline> polylinesToCheck, int pointX, int pointY) {
-	for each (ofPolyline polyline in polylinesToCheck) {
+	for (auto& polyline : polylinesToCheck) {
 		if (polyline.inside(pointX, pointY)) {
 			return true;
 		}

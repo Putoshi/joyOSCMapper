@@ -180,7 +180,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw() {
 	if (!oscOnly) {
-		for each (Joycon joycon in joyconsVec) {
+		for (auto& joycon : joyconsVec) {
 			if (joycon.GUIToggle && (!joycon.isVirtual || (joycon.isVirtual && useVirtualJoycons))) {
 				joycon.drawJoycon(useRawIMUData, useCookedIMUData);
 			}

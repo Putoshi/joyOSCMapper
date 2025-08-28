@@ -94,7 +94,7 @@ class Joycon {
 		int celHeight = 0;
 		bool isVirtual = false; //_n4
 		bool* clickedInputPointer = NULL;
-		ofxToggle GUIToggle = true;
+		ofxToggle GUIToggle;
 		ofxOscSender oscSender;
 		ofColor joyconColor;
 		string nameOnGUI;

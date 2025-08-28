@@ -4,3 +4,7 @@
 
 # Visual Studio 2017 files
 .vs/
+
+.claude/
+config.make
+dll/
